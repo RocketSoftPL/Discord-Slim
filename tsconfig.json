@@ -1,26 +1,18 @@
 {
-    "compilerOptions": {
-        "module": "ES2020",
-        "target": "ES2020",
-        "strict": true,
-        "moduleResolution": "node",
-        "outDir": "package/dist",
-        "declaration": true,
-        "stripInternal": true,
-        "baseUrl": ".",
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "removeComments": true,
-        "paths": {
-            "*": [
-                "node_modules/*"
-            ]
-        },
-        "lib": [
-            "ES2020"
-        ]
-    },
-    "include": [
-        "src/index.ts"
-    ]
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "types": [
+      "node"
+    ],
+    "sourceMap": true,
+    "baseUrl": "./"
+  },
+  "outDir": "dist"
 }
